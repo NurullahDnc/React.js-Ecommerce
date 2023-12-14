@@ -15,7 +15,7 @@ export default function SliderComp() {
     };
     return (
         <div>
-
+            {/* sayfada slider yapıyor  react-slick ile */}
             <Slider {...settings}>
                 <div className='!flex items-center bg-gray-100 '>
                     <div className='px-5'>
