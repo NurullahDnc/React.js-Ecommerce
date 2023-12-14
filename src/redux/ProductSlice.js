@@ -20,6 +20,13 @@ const initialState = {
     return data
   })
 
+  //categorye gore alıcak
+  export const getCategoryProduct = createAsyncThunk('getCategoryProduct', async(category)=>{
+    const response = await fetch(`https://fakestoreapi.com/products/category/${category}`)
+    const data = await response.json()
+    return data
+  })
+
   //apiden urunun detayını alıyor, parametre olarak id alıyor
   export const getDetailProduct = createAsyncThunk('getDetailProduct', async(id)=>{
     const response = await fetch(`https://fakestoreapi.com/products/${id}`)
@@ -62,8 +69,8 @@ const initialState = {
 
             //*----------------getDetailProduct, urun detayları icin
 
-            .addCase(getDetailProduct.pending, (state, action) => {
-              state.productDetailStatus = STATUS.LOADING
+        .addCase(getDetailProduct.pending, (state, action) => {
+            state.productDetailStatus = STATUS.LOADING
         })
 
         .addCase(getDetailProduct.fulfilled, (state, action) =>{
@@ -74,6 +81,21 @@ const initialState = {
          .addCase(getDetailProduct.rejected, (state, action) =>{
             state.productDetailStatus = STATUS.FAIL
         })
+
+            //*----------------getCategoryProduct, urun categoryleri icin
+
+            .addCase(getCategoryProduct.pending, (state, action) => {
+              state.productDetailStatus = STATUS.LOADING
+          })
+  
+          .addCase(getCategoryProduct.fulfilled, (state, action) =>{
+              state.productDetailStatus = STATUS.SUCCESS
+              state.products = action.payload
+          })
+  
+           .addCase(getCategoryProduct.rejected, (state, action) =>{
+              state.productDetailStatus = STATUS.FAIL
+          })
     }
 
   })

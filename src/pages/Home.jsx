@@ -5,8 +5,9 @@ import Category from '../components/home/Category'
 import Products from '../components/home/Products'
 export default function Home() {
 
-    // const [sort, setShort] = useState();
-    // const [category, setCategory] = useState();
+    const [sort, setShort] = useState();
+    // setcategory'i Category comps gondeiyoruz categori name almaıs icin, aldıktan sonra product comps. gonderiyoruz category'i
+    const [category, setCategory] = useState();
 
   return (
     <div>
@@ -15,8 +16,8 @@ export default function Home() {
       <Sorting />
 
       <div className='flex'>
-        <Category />
-        <Products />
+        <Category setCategory={setCategory} />
+        <Products category={category} />
       </div>
 
 

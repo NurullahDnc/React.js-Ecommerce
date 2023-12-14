@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import {GetCategories} from '../../redux/CategorySlice'
 
-export default function Category() {
+export default function Category({setCategory}) {
   
   //* redux ile gelen veriler categories icerisinde
 
@@ -27,7 +27,8 @@ export default function Category() {
         <div className='border-b-2 font-bold text-xl bg-gray-100 py-3'>KATEGORİLER</div>
         {
           categories?.map((category,i)=>(
-            <div className='py-2.5 cursor-pointer hover:bg-gray-200' key={i}>
+            //kategori menusunde click oldugunda, category name'ini setCategory useStateien gonderiyoruz, filitreleme icin
+            <div onClick={()=> setCategory(category)} className='py-2.5 cursor-pointer hover:bg-gray-200' key={i}>
               {category} 
             </div>
           ))

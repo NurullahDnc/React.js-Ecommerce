@@ -8,3 +8,18 @@
 body{
     font-family: 'Nunito', sans-serif;
 }
+
+/*products.jsx*/
+.paginate{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 10px 0;
+}
+
+.paginate li{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    font-size: 18px;
+}

@@ -8,7 +8,7 @@ export const store = configureStore({
 
     categories : categorySlice,
     products: ProductSlice,
-
+    
 },
 
 })
