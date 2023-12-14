@@ -7,7 +7,7 @@ import ReactPaginate from 'react-paginate';
 
 //! productSlice de api den cekilen verileri, redux ile buraya cekiyoruz, map ile dondukten sonra Product.jsx comps. gonderiyoruz
 
-export default function Products({category}) {
+export default function Products({category, sort}) {
 
   const dispatch = useDispatch()
   const { products, productStatus } = useSelector(state => state.products)
@@ -60,17 +60,21 @@ export default function Products({category}) {
   return (
     <div >
       {
+        
         // gelen productStatus LOADING gelirse loadig comps. import et, gelmez ise producta map ile don, Product comps. gonder verileri 
         productStatus == "LOADING" ? <Loading /> :
-          <>        <div className='flex flex-wrap justify-evenly'>
+          <>       
+           <div className='flex flex-wrap justify-evenly'>
             {// map ile dondugumuz products di, currentItems yaptık, urun sınırlaması yaptıgımız icin
-              currentItems.map((product, i) => (
+            // sort islemi yapıcaz currentItems icerisinde, gelen sort degeri "inc"'e esit ise a-b, veya "dic" ise b-a al veya null al
+              currentItems?.sort((a,b)=> sort ==="inc"? a.price-b.price : sort === "dec"? b.price-a.price : null) .map((product, i) => (
                 <Product key={i} product={product} />
 
               ))
             }
 
           </div>
+
 
           { /*-------------------- react-paginate (sayfa sınırlandırma) */ }
             <ReactPaginate
@@ -85,6 +89,12 @@ export default function Products({category}) {
             />
           </>
         /*-------------------- react-paginate (sayfa sınırlandırma)*/
+
+        
+      }
+
+      { // contol yapabiliriz urunler gelmez
+        productStatus == "FAIL"? console.log("calsıtı"): console.log("calısmadı")
 
       }
     </div>
