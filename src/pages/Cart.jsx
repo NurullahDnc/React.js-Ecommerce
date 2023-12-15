@@ -18,7 +18,7 @@ export default function Cart() {
 
   
   return (
-    <div className='flex w-[100%]'>
+    <div className='flex w-[100%] '>
         {
             carts?.length > 0 ? <div className='min-w-[80%]  '>
                 {carts?.map((cart, i) => (

@@ -46,9 +46,9 @@ export default function DetailComps({productDetail}) {
     // }
 
   return (
-    <div className='flex w-[100%] items-center'>
+    <div className='flex w-[100%] items-center '>
         <div className=' w-[55%]'>
-            <img className='w-[500px] h-[500px] object-contain flex m-auto ' src={productDetail.image} alt="" />
+            <img className='w-[400px] h-[400px] object-contain flex m-auto ' src={productDetail.image} alt="" />
         </div>
         <div className=' w-[45%] relative'>
 

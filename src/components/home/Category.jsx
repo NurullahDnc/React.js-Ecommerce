@@ -22,13 +22,13 @@ export default function Category({setCategory}) {
 
 
   return (
-    <div className='w-1/6 bg-gray-100 p-4 max-h-screen ' > 
+    <div className='w-1/6 bg-gray-100 max-h-screen ' > 
       
-        <div className='border-b-2 font-bold text-xl bg-gray-100 py-3'>KATEGORİLER</div>
+        <div className='border-b-2 font-bold text-xl bg-gray-100 p-4 py-3'>KATEGORİLER</div>
         {
           categories?.map((category,i)=>(
             //kategori menusunde click oldugunda, category name'ini setCategory useStateien gonderiyoruz, filitreleme icin
-            <div onClick={()=> setCategory(category)} className='py-2.5 cursor-pointer hover:bg-gray-200' key={i}>
+            <div onClick={()=> setCategory(category)} className='leading-9 cursor-pointer font-Nunito hover:bg-gray-200' style={{textIndent:"20px"}} key={i}>
               {category} 
             </div>
           ))

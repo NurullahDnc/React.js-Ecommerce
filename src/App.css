@@ -18,3 +18,37 @@
 .add-success{
     background-color: #5ebe92;
 }
+
+/* footer*/
+
+.footer-li h1{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.footer-li li{
+    font-size: 15px;
+    line-height: 30px;
+    cursor: pointer;
+
+}
+
+.footer-li li:hover{
+    color: gray;
+
+}
+
+.footer-menu ol li{
+    margin-right: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.footer-menu ol li:hover{
+    border-bottom: 1px solid ;
+    color: gray;
+    
+}
+
+/* footer*/

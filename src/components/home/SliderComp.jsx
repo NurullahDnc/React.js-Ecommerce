@@ -42,7 +42,7 @@ export default function SliderComp() {
                         <p className='text-lg my-4'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dicta impedit iste iusto dignissimos nemo eligendi architecto. Quia, libero dolor hic voluptatum veritatis, molestiae quas dicta voluptatem tenetur facilis quisquam!</p>
                         <button className='rounded-full border py-2 px-5 text-2xl bg-gray-200 outline-none'>İncele</button>
                     </div>
-                    <img src="./images/Ekran görüntüsü 2023-12-13 211358.png" alt="" />
+                    <img src="./images/Ekran görüntüsü 2023-12-15 200417.png" alt="" />
                 </div>
 
             </Slider>
