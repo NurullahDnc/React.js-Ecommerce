@@ -12,7 +12,6 @@ export default function Products({category, sort}) {
   const dispatch = useDispatch()
   const { products, productStatus } = useSelector(state => state.products)
 
-
   //*-------------------- react-paginate (sayfa sınırlandırma)
 
   const [itemOffset, setItemOffset] = useState(0);
@@ -20,7 +19,7 @@ export default function Products({category, sort}) {
   // Simulate fetching items from another resources.
   // (This could be items from props; or items loaded in a local state
   // from an API endpoint with useEffect and useState)
-  const itemsPerPage = 6;
+  const itemsPerPage = 9;
   const endOffset = itemOffset + itemsPerPage;
   console.log(`Loading items from ${itemOffset} to ${endOffset}`);
   const currentItems = products.slice(itemOffset, endOffset);
@@ -41,8 +40,7 @@ export default function Products({category, sort}) {
 
   console.log(products, "products")
 
-  // sayfa yuklendiginde efecte tum urunu alıyoruz, categori name'ine gore alıcaz
-
+  //category tıklandıgında effect de degisiklik oldugunda calıs, category true ise,  getCategoryProduct func. getir false getProducts getir
   useEffect(() => {
 
     if(category){
@@ -67,7 +65,9 @@ export default function Products({category, sort}) {
            <div className='flex flex-wrap justify-evenly'>
             {// map ile dondugumuz products di, currentItems yaptık, urun sınırlaması yaptıgımız icin
             // sort islemi yapıcaz currentItems icerisinde, gelen sort degeri "inc"'e esit ise a-b, veya "dic" ise b-a al veya null al
-              currentItems?.sort((a,b)=> sort ==="inc"? a.price-b.price : sort === "dec"? b.price-a.price : null) .map((product, i) => (
+              currentItems?.sort((a,b)=> sort ==="inc"? a.price-b.price : sort === "dec"? b.price-a.price : null).map((product, i) => (
+               
+                // props ile id ve veriyi gonderiyoruz
                 <Product key={i} product={product} />
 
               ))

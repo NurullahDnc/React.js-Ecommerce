@@ -1,7 +1,7 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import {STATUS} from '../utils/status'
 
-/*baslangic durumunda  initialState oluyor */
+/*baslangic durumunda  initialState oluyor ? */
 const initialState = {
     // tum urunler icin dizi icerisinde productslar 
     products: [],
