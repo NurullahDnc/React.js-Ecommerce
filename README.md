@@ -13,8 +13,8 @@
 ## About The Project
  
  
+![Ekran görüntüsü 2024-03-17 211435](https://github.com/NurullahDnc/e-commerce-shoe/assets/150585098/7787bf45-f131-4ee2-9b4c-c62154fcedab)
 
-![image](https://github.com/NurullahDnc/Search-App/assets/150585098/736b4e1f-7120-447b-8e11-22d19f9896e5)
   <hr/>
   
 ![image](https://github.com/NurullahDnc/Search-App/assets/150585098/4ec6ae23-3660-4dd8-9f89-6737dd87f38f)
