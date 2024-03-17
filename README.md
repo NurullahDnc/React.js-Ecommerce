@@ -15,8 +15,13 @@
  
 
 ![image](https://github.com/NurullahDnc/Search-App/assets/150585098/736b4e1f-7120-447b-8e11-22d19f9896e5)
+  <hr/>
 ![image](https://github.com/NurullahDnc/Search-App/assets/150585098/4ec6ae23-3660-4dd8-9f89-6737dd87f38f)
+  <hr/>
+
 ![image](https://github.com/NurullahDnc/Search-App/assets/150585098/7a1cf847-8396-4f08-9a6c-af0ffbb41294)
+  <hr/>
+
 ![image](https://github.com/NurullahDnc/Search-App/assets/150585098/b7982c7c-aeda-4ed6-8816-8d817d7447d9)
 
 
