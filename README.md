@@ -15,9 +15,7 @@
  
 ![Ekran görüntüsü 2024-03-17 211435](https://github.com/NurullahDnc/e-commerce-shoe/assets/150585098/7787bf45-f131-4ee2-9b4c-c62154fcedab)
 
-
-
-  
+  <hr/>  
   
 ![image](https://github.com/NurullahDnc/Search-App/assets/150585098/4ec6ae23-3660-4dd8-9f89-6737dd87f38f)
   <hr/>
