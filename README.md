@@ -26,6 +26,10 @@
   - Axios
   - Tailwindcss
     
+
+  ## Api
+  -https://fakestoreapi.com
+    
   
   ## Contact
 
